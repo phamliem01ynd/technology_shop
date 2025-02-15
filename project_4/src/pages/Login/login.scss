@@ -1,0 +1,41 @@
+.login{
+    width: 500px;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    
+    &__image{
+        margin-top: 20px;
+        img{
+            width: 60px;
+            height: auto; 
+            
+        }
+    }
+    button{
+        background-color: var(--color--bk2);
+        color: #fff;
+    }
+    a{
+        color: var(--color-two);
+    }
+    .register{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }   
+}
+.ant-form{
+    width: 400px;
+    padding:25px;
+    background-color: #fff;
+}
+
+.forgetpassword{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,45 @@
+.about {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  &__list {
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 5%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: product 20s linear infinite;
+    .item {
+      position: absolute;
+      inset: 0;
+      transform: rotateY(
+          calc((var(--possition) - 1) * (360 / var(--quantity)) * 1deg)
+        )
+        translateZ(500px);
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+.aboutRef {
+  background-color: aqua;
+}
+.active {
+  background-color: aqua;
+}
+
+@keyframes product {
+  from {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+  }
+}

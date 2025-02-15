@@ -1,0 +1,24 @@
+.layout{
+    width: 100%;
+    height: auto;
+    &__header{
+        background-color: #fff;
+    }
+    &__middle{
+        width: 100%;
+        height: auto; 
+        height: 500px;
+               
+    }
+    &__sider{
+      width: 20%;
+      background-color: #fff;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  &__content{
+    max-height: 500px;
+      background-color: var(--color--bk);
+      flex: 1;
+  }
+    
+}

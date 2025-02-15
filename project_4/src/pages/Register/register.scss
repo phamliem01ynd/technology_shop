@@ -1,0 +1,40 @@
+.Register{
+    width: 500px;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    
+    &__image{
+        margin-top: 20px;
+        .form{
+            opacity: 0.2;
+        }
+        img{
+            width: 60px;
+            height: auto; 
+            
+        }
+    }
+    button{
+        background-color: var(--color--bk2);
+        color: #fff;
+    }
+    a{
+        color: var(--color-two);
+    }
+ 
+}
+.ant-form{
+    width: 400px;
+    padding:25px;
+    background-color: #fff;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,226 @@
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes appearright {
+    from{
+        opacity: 0;
+        scale:0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.Content1{
+    width: 90%;
+    margin: auto;
+    .ant-carousel{
+        img{
+            width: 100%;
+            height: 450px;
+        }
+    }
+    margin-bottom: 20px;
+}
+
+.menu{
+    background-color: #000;
+    p{
+        color: #fff;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        transition: transform 0.3s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+.Content2{
+    width: 90%;
+    margin: auto;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 30%;
+    .productTitle{
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+}
+
+.Content3{
+    animation: appearright linear;
+    animation-timeline: view();
+    animation-range: entry 30%;
+    margin: 60px auto;
+    width: 90%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dad4d4d2;
+    &__image{
+        width: 40%;
+        height: auto;
+        margin-right: 50px;
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+
+        }
+    }
+    &__content{
+        flex: 1;
+        margin-right: 100px;
+        .title1{
+            font-size: 24px;
+            font-weight: 500;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        .title2{
+            font-size: 14px;
+            font-weight: 400;
+            color: #000;
+            opacity: 0.5;
+            margin-bottom: 20px;
+        }
+        .form{
+            margin-bottom: 20px;
+            position: relative;
+            button{
+                position: absolute;
+                left: 52%;
+                background-color: #000;
+                color: #fff;
+            }
+        }
+        .contact{
+            img{
+                width: 100px;
+                height: auto;
+            }
+        }
+    }
+}
+
+.Content4{
+    animation: appearright linear;
+    animation-timeline: view();
+    animation-range: entry 30%;
+    width: 90%;
+    margin: 0px auto 60px auto;   
+    &__block{
+        border: 1px solid #c8c8c8ae;
+        display: flex;
+        align-items: center;   
+    }
+    &__detail{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-left: 1px solid #c8c8c8ae;
+        *{
+            margin: 10px;
+        }
+        .title{
+            display: flex;
+            flex-direction: column;
+        }
+        .icon{
+            font-size: 60px;
+            color: #000;
+        }
+        p{
+            font-size: 14px;
+            opacity: 0.5;
+            text-transform: initial;
+        }
+    }
+
+}
+    
+.Content5{
+    animation: appearright linear;
+    animation-timeline: view();
+    animation-range: entry 30%;
+    width: 90%;
+    margin: 0px auto 60px auto;
+    height: auto;
+    background-color:#dad4d4d2 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2{
+        text-align: center;
+    }
+    .ant-form{
+        width: 600px;
+        height: auto;  
+        margin-bottom: 60px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        button {
+            text-align: center;
+            width: 75px;
+            height: auto;
+            background: #000;
+            color: #fff;
+            span{
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+    .contact{
+        .information{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            input{
+                width: 260px;
+                height: auto;
+            }
+            .name{
+                margin-right: 40px;
+            }
+        }
+
+        
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        input{
+            width: 560px;
+            height: auto;
+            input:last-child{
+                margin: 25px 0px;
+            }
+        }
+        .title1{
+            margin-bottom: 25px;
+        }
+    }
+    button{
+        margin: 25px 0px;
+    }
+
+}

@@ -1,0 +1,78 @@
+.shop{
+    width: 90%;
+    margin: 40px auto 50px auto;
+    &__category{
+        background: #fff;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+        h2{
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0px 10px 0px;
+            margin: 0;
+        }
+        .categorylist{
+            cursor: pointer;
+            line-height: 2;
+            font-size: 18px;
+
+            font-weight: 500;   
+            .categoryid{
+                transition: background 0.2s linear, transform 0.2s linear;
+                margin: 0px 25px; 
+                &:hover{
+                    transform: scale(1.1);
+                    background:pink;
+                }
+            }
+        }
+    }
+    &__title{
+        background: #fff;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        h2{
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            margin: 0;
+        }
+        p{
+            cursor: pointer;
+            line-height: 1.5;
+            font-size: 18px;
+            margin-left: 25px;  
+            font-weight: 500;
+            transition: transform 0.3 ease;
+            transition: background 0.2s linear, transform 0.2s linear;
+            margin: 15px 25px;
+                &:hover{
+                    transform: scale(1.1);
+                    background:pink;
+                }
+            &.selected {
+                background-color: #000;
+                counter-reset: #fff;
+                font-weight: bold;
+              }
+        }
+        .categorylist{
+            cursor: pointer;
+            line-height: 1.5;
+            font-size: 18px;
+            margin-left: 25px;    
+        }
+    }
+    &__detail{
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            margin-bottom: 40px;
+        }
+    }
+}

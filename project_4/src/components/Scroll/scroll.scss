@@ -1,0 +1,17 @@
+.scroll {
+  position: fixed;
+  top: 80%;
+  right: 5%;
+  padding: 10px;
+  border-radius: 40%;
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  &.block {
+    opacity: 1;
+  } 
+}
