@@ -67,8 +67,8 @@ const HomePage = () => {
             </Link>
           </Col>
           <Col xxl={4} xl={4} lg={4}>
-            <Link to='/'>
-              <p>Contact</p>
+            <Link to='blog'>
+              <p>Blog</p>
             </Link>
           </Col>
           <Col xxl={4} xl={4} lg={4}>

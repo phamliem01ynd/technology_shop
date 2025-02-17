@@ -13,12 +13,17 @@ import ProductPage from "../pages/ProductPage/productPage";
 import Shop from "../pages/Shop/shop";
 import Cart from "../pages/Cart/cart";
 import About from "../pages/About/about";
+import Blog from "../pages/BlogPage/blog";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        path: "blog",
+        element:<Blog/>
+      },
       {
         path: "",
         element: <HomePage />,
